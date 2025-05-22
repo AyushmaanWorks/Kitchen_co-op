@@ -12,18 +12,18 @@ export default function Home() {
         <Image src="/images/logo.png" alt="logo" width={150} height={150} />
 
         <div className="flex flex-col items-center justify-center gap-4">
-          <div className="flex bg-[#DB99C7] opacity-[90%] rounded-full p-2">
+          <div className="flex item-center justify-center px-8 py-5 bg-[#DB99C7]/70 rounded-full p-2">
             <h1
-              className={`text-5xl text-[#44263A] font-extrabold ${fredoka.className}`}
+              className={`text-5xl text-[#44263A] font-extrabold glow-yellow ${fredoka.className}`}
             >
               WE COOKED THAT
             </h1>
           </div>
-          <div className="flex bg-[#FFFFFF] opacity-[80%] rounded-full p-2">
+          <div className="flex item-center justify-center px-4 bg-[#FFFFFF]/70 rounded-full p-2">
             <h1
-              className={`text-3xl text-[#D52A78] font-extrabold ${fredoka.className}`}
+              className={`text-3xl text-[#D52A78] font-extrabold glow-pink ${fredoka.className}`}
             >
-              Cook and chill togethor!!
+              Cook and chill together!!
             </h1>
           </div>
         </div>
@@ -34,26 +34,29 @@ export default function Home() {
       {/* Bottom 60% Section */}
       <div className="h-[60%] w-[30%] flex items-center justify-center">
         <Button
-          className={`rounded-2xl font-extrabold min-w-[20vw] text-[#FFDBAF] text-4xl hover:cursor-pointer hover:text-5xl transition-all duration-300 ${fredoka.className}`}
+          className={`rounded-2xl font-extrabold min-w-[20vw] text-[#FFF7E4] text-4xl hover:cursor-pointer hover:text-5xl transition-all duration-300 ${fredoka.className}`}
         >
           <Image
             src="/images/playbutton.png"
             alt="logo"
-            width={50}
-            height={50}
+            width={80}
+            height={80}
           />
           Start Cooking...
         </Button>
       </div>
 
       {/* Bottom 20% Section */}
-      <div className="h-[20%] min- w-full flex items-center justify-end p">
+       <div className="h-[20%] min- w-full flex items-center justify-end">
         <Button
-          className={`rounded-2xl font-extrabold min-w-[20vw] text-[#FFDBAF] text-4xl hover:cursor-pointer hover:text-5xl transition-all duration-300 ${fredoka.className}`}
+          className={`flex items-center gap-4 rounded-2xl font-extrabold min-w-[18vw] text-[#fff7e4] text-3xl hover:text-4xl transition-all duration-300 ${fredoka.className}`}
         >
-          <Image src="/images/rules.png" alt="logo" width={70} height={70} />
-
-          <h1>Help Book</h1>
+          <Image
+            src="/images/rules.png"
+            alt="logo"
+            width={70}
+            height={70}
+          />
         </Button>
       </div>
     </div>
