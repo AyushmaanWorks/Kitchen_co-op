@@ -47,16 +47,13 @@ export default function Home() {
       </div>
 
       {/* Bottom 20% Section */}
-       <div className="h-[20%] min- w-full flex items-center justify-end">
+      <div className="h-[20%] min- w-full flex items-center justify-end p">
         <Button
           className={`rounded-2xl font-extrabold min-w-[20vw] text-[#FFDBAF] text-4xl hover:cursor-pointer hover:text-5xl transition-all duration-300 ${fredoka.className}`}
         >
-          <Image
-            src="/images/rules.png"
-            alt="logo"
-            width={70}
-            height={70}
-          />
+          <Image src="/images/rules.png" alt="logo" width={70} height={70} />
+
+          <h1>Help Book</h1>
         </Button>
       </div>
     </div>
