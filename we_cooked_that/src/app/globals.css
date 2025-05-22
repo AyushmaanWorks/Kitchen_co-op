@@ -24,3 +24,9 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+.glow-yellow {
+  text-shadow: 0 0 10px #fff39a;
+}
+.glow-pink {
+  text-shadow: 0 0 50px #ffcaef 0 0 5px #ffcaef;
+}
