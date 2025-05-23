@@ -31,7 +31,6 @@ export default function Home() {
         <Image src="/images/logo.png" alt="logo" width={150} height={150} />
       </div>
 
-      {/* Bottom 60% Section */}
       <div className="h-[60%] w-[30%] flex items-center justify-center">
         <Button
           className={`rounded-2xl font-extrabold min-w-[20vw] text-[#FFF7E4] text-4xl hover:cursor-pointer hover:text-5xl transition-all duration-300 ${fredoka.className}`}
@@ -47,16 +46,11 @@ export default function Home() {
       </div>
 
       {/* Bottom 20% Section */}
-       <div className="h-[20%] min- w-full flex items-center justify-end">
+      <div className="h-[20%] min- w-full flex items-center justify-end">
         <Button
           className={`flex items-center gap-4 rounded-2xl font-extrabold min-w-[18vw] text-[#fff7e4] text-3xl hover:text-4xl transition-all duration-300 ${fredoka.className}`}
         >
-          <Image
-            src="/images/rules.png"
-            alt="logo"
-            width={70}
-            height={70}
-          />
+          <Image src="/images/rules.png" alt="logo" width={70} height={70} />
         </Button>
       </div>
     </div>
