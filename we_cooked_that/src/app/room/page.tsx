@@ -7,8 +7,8 @@ import { useState } from "react";
 
 export default function Home() {
   const [name, setName] = useState("");
-  const [step, setStep] = useState("enter");
-  const handleCreateRoom = () => {console.log("Room created")};
+  const [step, setStep] = useState("name");
+  const handleCreateRoom = () => {setStep("create")};
 
   return (
     <div className="h-screen w-screen bg-cover bg-center bg-[url('/images/room.png')] overflow-hidden flex flex-col">
@@ -43,11 +43,11 @@ export default function Home() {
 
         {/* ENTER NAME */}
 
-        {name && (
+        {step === "name" && (
           <div className="flex flex-row gap-8">
             <Button
               className={`relative w-[280px] h-[118px] rounded-2xl font-extrabold text-[#fff7e4] text-3xl transition-all duration-300 hover:scale-105 hover:cursor-pointer ${fredoka.className}`}
-              onClick={() => console.log("Create Room")}
+              onClick={handleCreateRoom}
             >
               <Image
                 src="/images/custombutton.png"
